@@ -9,7 +9,7 @@ body::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: url("./bronxpattern.png") no-repeat center center;
+    background: url("./images/bronxpattern.png") no-repeat center center;
     background-size: cover;
     opacity: 0.1; /* controla a opacidade do fundo */
     z-index: -1; /* fica atrás do conteúdo */
