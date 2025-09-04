@@ -1,0 +1,178 @@
+body {
+  background-color: white;
+  margin: 0;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: url("./images/bronxpattern.png") no-repeat center center;
+  background-size: cover;
+  opacity: 0.2;
+  z-index: -1;
+  filter: blur(4px);
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  filter: drop-shadow(3px 3px 6px rgba(56, 33, 6, 0.5));
+}
+
+.logo img {
+  max-width: 400px;
+  height: auto;
+}
+
+/* Header */
+header {
+  margin-top: 0px;
+  font-size: 22px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+header nav ul {
+  display: flex;
+  gap: 48px;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+header nav ul li {
+  position: relative;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: black;
+  letter-spacing: 1px;
+  padding: 5px 0;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: orange;
+}
+
+header nav ul li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0px;
+  height: 2px;
+  background-color: orange;
+  transition: width 0.5s ease;
+}
+
+header nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* Seção de contato */
+.contato {
+  text-align: center;
+  padding: 40px 10%;
+}
+
+.contato h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.contato p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #444;
+}
+
+/* Cards de contato */
+.contato-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  font-size: 32px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding-right: 15px;
+}
+
+.card p,
+.card a {
+  font-size: 18px;
+  color: #333;
+  text-decoration: none;
+}
+
+.card a:hover {
+  color: orange;
+}
+
+p {
+  font-family: 'Courier New', Courier, monospace;
+  letter-spacing: -1px;
+  font-weight: 500;
+}
+
+footer {
+  width: 100%;
+  height: 70px;
+  background-color: #1a1100;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+footer .contatos a {
+  color: white;
+  text-decoration: none;
+  margin: 0 5px;
+  transition: color 0.3s ease;
+  font-weight: 600;
+}
+
+footer .contatos a:hover {
+  color: rgb(143, 83, 255);
+}
+
+main .contato p {
+  font-weight: 500;
+  color: rgb(48, 31, 1);
+}
+
+.contato-cards a {
+  padding-right: 10px;
+}
