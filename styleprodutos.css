@@ -8,7 +8,7 @@ body::before {
   content: "";
   position: fixed;
   inset: 0;
-  background: url("./images/bronxpattern.png") no-repeat center center;
+  background: url("./images/produtos/bronxpattern.png") no-repeat center center;
   background-size: cover;
   opacity: 0.2;
   z-index: -1;
@@ -27,6 +27,11 @@ body::before {
 .logo img {
   max-width: 400px;
   height: auto;
+}
+
+h2 {
+  padding-top: 25px;
+  text-shadow: orange 2px 3px 3px;
 }
 
 /* Header */

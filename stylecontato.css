@@ -8,7 +8,7 @@ body::before {
   content: "";
   position: fixed;
   inset: 0;
-  background: url("./images/bronxpattern.png") no-repeat center center;
+  background: url("./images/produtos/bronxpattern.png") no-repeat center center;
   background-size: cover;
   opacity: 0.2;
   z-index: -1;
@@ -85,14 +85,18 @@ header nav ul li a:hover::after {
 
 .contato h2 {
   font-size: 32px;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
   color: #222;
+  text-shadow: orange 2px 3px 3px;
 }
 
 .contato p {
   font-size: 18px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   color: #444;
+  font-family: "Lexend", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0px;
 }
 
 /* Cards de contato */
@@ -105,9 +109,10 @@ header nav ul li a:hover::after {
 .card {
   background: #fff;
   border-radius: 12px;
-  padding: 20px;
+  padding: 10px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 180px;
 }
 
 .card:hover {
