@@ -7,7 +7,7 @@ body {
 
 body::before {
     content: "";
-    position: absolute;
+    position: fixed;
     inset: 0;
     background: url("./images/bronxpattern.png") no-repeat center center;
     background-size: cover;
